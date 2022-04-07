@@ -49,16 +49,19 @@ header {
 }
 
 .Navbar__Link {
-  padding-right: 8px;
+  padding-right: 35px;
 }
 
 .Navbar__Items--right {
   margin-left:auto;
+  padding-right: 8px;
 }
 
 .Navbar__Link-toggle {
   display: none;
 }
+
+
 
 /******************************************
 /* MOBILE
@@ -87,22 +90,31 @@ header {
     cursor: pointer;
   }
 
+  .Navbar a:hover {
+    background-color: white;
+    color: #0077B6;
+  }
+
+  .navName span {
+    display: none;
+  }
+
   main {
-    height: 600px;
+    height: 58vh;
     width: 100%;
     background: url("../css/images/hero_01.jpg") 49% 50% no-repeat;
     background-size: cover;
   }
   .hero {
-    width: 230px;
-    height: 300px;
+    width: 20vh;
+    height: 33vh;
     position: absolute;
-    left: 50px;
-    top: 320px;
-    padding: 22px;
+    left: 2vh;
+    top: 30vh;
+    padding: 2vh;
   }
   .row_1 {
-    height: 2200px;
+    height: 215vh;
     width: 100%;
     margin: 0 auto;
     background-color: hsla(360, 0%, 100%, 1);
@@ -115,15 +127,15 @@ header {
   }
   .service {
     text-align: center;
-    padding-top: 25px;
+    padding: 2vh 2vh;
   }
 
   .row_container {
-    height: 2000px;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 2%;
   }
@@ -139,12 +151,13 @@ header {
   }
  
   .about {
-    height: 600px;
+    height: 66vh;
   }
 
   footer{
-    height: 600px;
+    height: 100vh;
   }
+  
   h3 {
     font-size: 16px;
   }
@@ -172,6 +185,7 @@ header {
   .Navbar__ToggleShow {
     display: flex;
   }
+
   .Navbar__Link-toggle {
     align-self: flex-end;
     display: initial;
@@ -179,43 +193,57 @@ header {
     cursor: pointer;
   }
 
+  .Navbar__Link {
+    padding: 10px 0;
+  }
+
+  .navName a {
+    font-size: .5rem;
+  }
+
+  .Navbar a:hover {
+    background-color: white;
+    color: #0077B6;
+  }
+
+  .navName span {
+    display: none;
+  }
+
   main {
-    height: 600px;
+    height: 65vh;
     width: 100%;
     background: url("../css/images/hero_01.jpg") 45% 50% no-repeat;
     background-size: cover;
   }
   .hero {
-    width: 230px;
-    height: 300px;
+    width: 20vh;
+    height: 33vh;
     position: absolute;
-    left: 50px;
-    top: 320px;
-    padding: 22px;
+    left: 5vh;
+    top: 30vh;
+    padding: 2vh;
   }
+
   .row_1 {
-    height: 2200px;
+    height: 200vh;
     width: 100%;
     margin: 0 auto;
     background-color: hsla(360, 0%, 100%, 1);
 
   }
   .row_container, .about_con, .contactInfo_con {
-    width: 80%;
+    width: 40vh;
     margin: 0 auto;
     padding: 20px;
   }
-  .service {
-    text-align: center;
-    padding-top: 25px;
-  }
 
   .row_container {
-    height: 2000px;
+    height: 115vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 2%;
   }
@@ -231,12 +259,9 @@ header {
   }
  
   .about {
-    height: 600px;
+    height: 64vh;
   }
 
-  footer{
-    height: 600px;
-  }
   h3 {
     font-size: 16px;
   }
@@ -256,39 +281,69 @@ header {
 /*******************************************/
 
 @media (min-width: 768px) and (max-width: 1120px) {
+  
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+  .Navbar__Items {
+    display:none;
+  }
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .Navbar__Link {
+    padding: 10px 0;
+  }
+
+  .navName a {
+    font-size: .5rem;
+  }
+
+  .Navbar a:hover {
+    background-color: white;
+    color: #0077B6;
+  }
+  
   main {
-    height: 600px;
+    height: 62vh;
     background: url("../css/images/hero_01.jpg") 20% 50% no-repeat;
     background-size: cover;
   }
   .hero {
-    background-color: #6798C0;
-    width: 230px;
-    height: 300px;
+    width: 20vh;
+    height: 33vh;
     position: absolute;
-    left: 100px;
-    top: 300px;
-    padding: 22px;
+    left: 5vh;
+    top: 30vh;
+    padding: 2vh;
   }
   .row_1 {
-    height: 2150px;
+    height: 235vh;
     width: 100%;
     margin: 0 auto;
     background-color: hsla(360, 0%, 100%, 1);
 
   }
   .row_container, .about_con, .contactInfo_con {
-    width: 800px;
+    width: 65vh;
     margin: 0 auto;
-    padding: 50px;
-  }
-  .service {
-    text-align: center;
-    padding-top: 25px;
+    padding: 1vh;
   }
 
   .row_container {
-    height: 1300px;
+    height: 98vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -303,11 +358,10 @@ header {
     padding: 40px;
   }  
   .about {
-    height: 600px;
+    height: 56vh;
   }
-  footer{
-    height: 800px;
-  }
+  
+  
 
 }
 
@@ -319,21 +373,20 @@ header {
 @media (min-width: 1120px) {
   
   main {
-    height: 600px;
+    height: 800px;
     background: url("../css/images/hero_01.jpg") 20% 50% no-repeat;
     background-size: cover;
   }
   .hero {
-    background-color: #6798C0;
-    width: 230px;
+    width: 200px;
     height: 300px;
     position: absolute;
-    left: 200px;
-    top: 300px;
-    padding: 22px;
+    left: 10vh;
+    top: 30vh;
+    padding: 2vh;
   }
   .row_1 {
-    height: 1150px;
+    height: 1100px;
     width: 100%;
     margin: 0 auto;
     background-color: hsla(360, 0%, 100%, 1);
@@ -341,17 +394,13 @@ header {
   }
 
   .service ,  .row_container, .about_con, .contactInfo_con {
-    width: 1150px;
+    width: 800px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 2vh;
   }
   
-  .service {
-    height: 100px;
-  }
-
   .row_container {
-    height: 990px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -361,9 +410,9 @@ header {
   }
 
   .row_con {
-    height: 300px;
+    height: 280px;
     width: 48%;
-    padding: 50px;
+    padding: 15px;
   }
 
   .about {
@@ -392,10 +441,6 @@ header {
     padding: 2px;
     text-align: justify;
   }
-  .about {
-    height: 425px;
-    
-  }
 }
 
 
@@ -418,8 +463,14 @@ header {
   background: white;
 }
 
+.service {
+  height: 100px;
+  text-align: center;
+  padding: 2vh 5vh;
+}
+
 footer {
-  height: 150px;
+  height: 15vh;
   font-family: Arial, Helvetica, sans-serif;
   color: hsla(195, 50%, 95%, 1)
 }
@@ -535,8 +586,16 @@ span {
  }
 
  
- 
- 
+ .navName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 0;
+}
+
+.navName span {
+  font-size: 16px;
+  vertical-align: middle;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
