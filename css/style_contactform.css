@@ -36,7 +36,7 @@
 }
 
 #contact h3 {
-	color: #0077B6;
+	color: #001D3D;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
@@ -81,7 +81,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0077B6;
+	background:#001D3D;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
