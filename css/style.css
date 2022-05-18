@@ -324,7 +324,7 @@ footer small {
 }
 
 .carousel__div {
-  width: 100%;
+  width: 95%;
   height: 100%;
   object-fit: cover;
   padding: 2rem;
@@ -332,7 +332,7 @@ footer small {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-top: #001D3D solid 2px;
+  margin: 0 auto;
 }
 
 .carousel__div_top1, .carousel__div_top2, .carousel__div_top3 {
@@ -397,11 +397,12 @@ footer small {
 }
 
 .carousel__button--left {
-  left: -40px;
+  left: 10px;
+  z-index: 1;
 }
 
 .carousel__button--right{
-  right: -40px;
+  right: 10px;
 }
 
 .carousel__button img {
@@ -417,7 +418,7 @@ footer small {
 .carousel__indicator {
   border: 0;
   border-radius: 50%;
-  width: 15px;
+  min-width: 15px;
   height: 15px;
   background: rgba(0, 0, 0, .3);
   margin: 0 12px;
